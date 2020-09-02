@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Aufgabe 5">
+    <meta name="keywords" content="HTML, CSS, Formulas">
+    <meta name="author" content="Yazdan Musa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5, M133</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <h1>User Registration</h1>
+        <form>
+            <input type="text" placeholder="First Name" name="First Name" id="firstName" pattern="/^[A-Z]+$/i">
+            <input type="text" placeholder="Last Name" id="lastName" pattern="/^[A-Z]+$/i">
+            <input type="text" placeholder="Street" id="street">
+            <input type="text" placeholder="Nr" id="number">
+            <input type="text" placeholder="Postal Code" id="postalCode" pattern="^\\d{4}$">
+            <input type="text" list="cities" placeholder="City" id="city">
+            <input type="text" placeholder="Age" id="age">
+            <input type="email" placeholder="Email" id="email">
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <datalist id="cities">
+        <option value="Zurich">
+        <option value="Bern">
+        <option value="Lucerne">
+        <option value="Geneva">
+        <option value="Basel">
+    </datalist>
+
+</body>
+
+</html>
