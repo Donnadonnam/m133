@@ -13,20 +13,25 @@
 </head>
 
 <body>
-    <main id="particles-js">
-        <h1>User Registration</h1> <br>
-        <form>
-            <input type="text" placeholder="First Name" name="First Name" id="firstName" pattern="/^[A-Z]+$/i">
-            <input type="text" placeholder="Last Name" id="lastName" pattern="/^[A-Z]+$/i"> <br>
-            <input type="text" placeholder="Street" id="street">
-            <input type="text" placeholder="Nr" id="number"> <br>
-            <input type="text" placeholder="Postal Code" id="postalCode" pattern="^\\d{4}$">
-            <input type="text" list="cities" placeholder="City" id="city"> <br>
-            <input type="text" placeholder="Age" id="age">
-            <input type="email" placeholder="Email" id="email"> <br>
-            <button type="reset">Reset</button>
-            <button type="submit">Submit</button>
-        </form>
+    <main>
+        <div id="particles-js"></div>
+        <div id="registration-form-container">
+            <div id="registration-form">
+                <h1>User Registration</h1> <br>
+                <form>
+                    <input type="text" placeholder="First Name" name="First Name" id="firstName" pattern="/^[A-Z]+$/i">
+                    <input type="text" placeholder="Last Name" id="lastName" pattern="/^[A-Z]+$/i"> <br>
+                    <input type="text" placeholder="Street" id="street">
+                    <input type="text" placeholder="Nr" id="number"> <br>
+                    <input type="text" placeholder="Postal Code" id="postalCode" pattern="^\\d{4}$">
+                    <input type="text" list="cities" placeholder="City" id="city"> <br>
+                    <input type="text" placeholder="Age" id="age">
+                    <input type="email" placeholder="Email" id="email"> <br>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
     </main>
 
     <datalist id="cities">
@@ -36,10 +41,8 @@
         <option value="Geneva">
         <option value="Basel">
     </datalist>
-
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="app.js"></script>
-
 </body>
 
 </html>
