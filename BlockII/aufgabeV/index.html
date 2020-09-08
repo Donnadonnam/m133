@@ -15,22 +15,20 @@
 <body>
     <main>
         <div id="particles-js"></div>
-        <div id="registration-form-container">
-            <div id="registration-form">
-                <h1>User Registration</h1> <br>
-                <form>
-                    <input type="text" placeholder="First Name" name="First Name" id="firstName" pattern="/^[A-Z]+$/i">
-                    <input type="text" placeholder="Last Name" id="lastName" pattern="/^[A-Z]+$/i"> <br>
-                    <input type="text" placeholder="Street" id="street">
-                    <input type="text" placeholder="Nr" id="number"> <br>
-                    <input type="text" placeholder="Postal Code" id="postalCode" pattern="^\\d{4}$">
-                    <input type="text" list="cities" placeholder="City" id="city"> <br>
-                    <input type="text" placeholder="Age" id="age">
-                    <input type="email" placeholder="Email" id="email"> <br>
-                    <button type="reset">Reset</button>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
+        <div id="registration-form">
+            <h1>User Registration</h1>
+            <form>
+                <input type="text" placeholder="First Name" name="First Name" id="firstName" pattern="^[^±!@£$%^&*_+§¡€#¢§¶•ªº«\\/<>?:;|=.,]{1,20}$">
+                <input type="text" placeholder="Last Name" id="lastName" pattern="^[^±!@£$%^&*_+§¡€#¢§¶•ªº«\\/<>?:;|=.,]{1,20}$">
+                <input type="text" placeholder="Street" id="street" pattern="^(.+)\s(\S+)$">
+                <input type="text" placeholder="Phone Nr" id="number" pattern="(\+41)\s?(\d{2})\s?(\d{3})\s?(\d{2})\s?(\d{2})">
+                <input type="text" placeholder="Postal Code" id="postalCode" pattern="^\\d{4}$">
+                <input type="text" list="cities" placeholder="City" id="city">
+                <input type="text" placeholder="Age" id="age" pattern="^[0-9]{1,2}[:.,-]?$">
+                <input type="email" placeholder="Email" id="email"> <br>
+                <button type="reset" class="hoverable">Reset</button>
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </main>
 

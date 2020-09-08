@@ -2,8 +2,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
-html,body {
+html,
+body {
     margin: auto;
+}
+
+h1 {
+    font-size: 32pt;
 }
 
 #particles-js {
@@ -19,19 +24,43 @@ canvas {
     vertical-align: bottom;
 }
 
-#registration-form-container {
-    overflow: hidden;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    flex-flow: row;
-    align-content: center;
-    justify-items: center;
-    width: 50%;
+#registration-form {
+    width: 25%;
+    height: 50%;
     position: absolute;
-    margin-left: 25%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
 }
 
-#registration-form{
-    margin-
+#registration-form h1,
+input,
+button {
+    padding: 3%;
+    color: #ff9800;
+    border: none;
+}
+
+#registration-form button {
+    margin-top: 50px;
+    width: 184px;
+    background-color: #151515;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#registration-form input {
+    background-color: #151515;
+}
+
+::placeholder {
+    color: #ff9800;
+    opacity: 1;
+}
+
+.hoverable input:hover {
+    background-color: #ff9800;
 }
