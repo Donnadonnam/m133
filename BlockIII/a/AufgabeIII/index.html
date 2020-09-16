@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aufgabe I</title>
+</head>
+
+<body>
+    <script>
+        function fibonacci(n) {
+            var result = [];
+            for (var i; i < n; i++) {
+                if (i <= 1) {
+                    result.push(i);
+                } else {
+                    result.push(result[i - 1] + result[i - 2]);
+                }
+            }
+
+            return result;
+        }
+
+        fibonacci(20);
+    </script>
+    <script>
+        printDebugInfo()
+    </script>
+</body>
+
+</html>
