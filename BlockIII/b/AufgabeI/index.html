@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aufgabe I</title>
+</head>
+
+<body>
+    <script>
+        function varTest() {
+            var x = 31;
+            if (true) {
+                var x = 71; // erneutes var mit gleichem Namen
+                console.log(x);
+            }
+            console.log(x);
+        }
+        varTest();
+
+        function letTest() {
+            let x = 31;
+            if (true) {
+                let x = 71; // erneutes let mit gleichem Namen
+                console.log(x);
+            }
+            console.log(x);
+        }
+        letTest();
+    </script>
+    <script>
+        printDebugInfo()
+    </script>
+    <main>Resultat: Var ist Scope unabhängig. Let ist innerhalb des {}</main>
+</body>
+
+</html>
