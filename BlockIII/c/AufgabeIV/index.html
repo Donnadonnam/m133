@@ -6,24 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aufgabe 04</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <main>
         <div id="particles-js"></div>
-
-        <div class="flex-container">
-            <div class="flex-box">
-                <button class="btn"></button>
-            </div>
-            <div class="flex-box">
-                <button class="btn"></button>
-            </div>
-            <div class="flex-box">
-                <button class="btn"></button>
-            </div>
-            §
-        </div>
+        <section>
+            
+            <form id="order">
+                <label>Wie viele Schrauben?</label>
+                <input type="number" id="screws"><br>
+                <label>Wie viele Muttern?</label>
+                <input type="number" id="nuts"><br>
+                <label>Wie viele Unterlegsscheiben?</label>
+                <input type="number" id="plates"><br>
+                <input id="submit" type="submit">
+                <input type="reset"> <br>
+            </form>
+        </section>
+        <button id="total"></button>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>

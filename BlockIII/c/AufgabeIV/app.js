@@ -1,3 +1,24 @@
+const screwsPrice = 20;
+const nutsPrice = 10;
+const platesPrice = 5;
+
+document.getElementById("order").onsubmit = function(){
+  var screws = document.getElementById("screws").value;
+  var nuts = document.getElementById("nuts").value;
+  var plates = document.getElementById("plates").value;
+  var price = 0;
+
+  price += screws * screwsPrice;
+  price += nuts * nutsPrice;
+  price += plates * platesPrice;
+  price = price/100;
+
+  document.getElementById("total").innerText = "Total Price: " + price + " CHF";
+  return false;
+}
+
+
+
 const particlesJSON = {
     "particles": {
         "number": {
@@ -110,7 +131,3 @@ const particlesJSON = {
 }
 
 particlesJS("particles-js", particlesJSON)
-
-function getSchrauben(params) {
-  
-}
