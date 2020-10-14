@@ -4,8 +4,6 @@ function addToDoList(event) {
   if (text == "")
     return false;
 
-  text.
-
   var ul = document.getElementById("list");
   var li = document.createElement("li");
   li.appendChild(document.createTextNode(text));
@@ -13,8 +11,6 @@ function addToDoList(event) {
   document.getElementById("input-field").value = "";
   return false;
 }
-
-
 
 var form = document.getElementById("input");
 form.addEventListener("submit", addToDoList);

@@ -6,7 +6,7 @@ body {
     font-size: 18pt;
 }
 
-main{
+main {
     display: table;
     position: absolute;
     top: 0;
@@ -14,13 +14,14 @@ main{
     height: 100%;
     width: 100%;
 }
+
 section {
     display: table-cell;
     vertical-align: middle;
-    
+
 }
 
-form{
+form {
     margin-left: auto;
     margin-right: auto;
     height: auto;
@@ -29,7 +30,7 @@ form{
     padding: 5%;
 }
 
-input{
+input {
     color: white;
     font-size: 20pt;
     height: 40px;
@@ -37,15 +38,16 @@ input{
     background-color: #525252;
 }
 
-#input-field{
+#input-field {
     width: 250px;
 }
 
-ul{
+ul {
     padding: 0;
     list-style-type: none;
 }
-ul li{
+
+ul li {
     padding: 1%;
     font-size: 20pt;
     background-color: #73008c;
