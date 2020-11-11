@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aufgabe II</title>
+</head>
+<body>
+    <script>
+        const form = document.querySelector("form");
+        form.addEventListener("submit", event => {
+            event.preventDefault();
+            const id = document.querySelector("input").valueAsNumber;
+            const url = `https://jsonplaceholder.typicode.com/posts/${id}`;
+            fech(url)
+                .then(respons => response.json())
+                .then(post => {
+                    const h1 = document.querySelector("h1");
+                    const article = document.querySelector("article");
+                    h1.innerText = post.title;
+                    article.innerText = post.body;
+
+                });
+        });
+    </script>
+</body>
+</html>
